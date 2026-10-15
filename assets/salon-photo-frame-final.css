@@ -1,0 +1,33 @@
+/* SALON only: keep the animated noii image comfortably within a viewport. */
+@media (min-width: 701px) {
+  #noii .widepic.noii-photo-slideshow {
+    width: min(100%, 800px, 86.67svh);
+    max-width: 100%;
+    margin-inline: auto;
+  }
+  /* Heiim's second portrait, not its main interior image. */
+  #heiim > .visual {
+    width: min(100%, 520px);
+    max-width: 520px !important;
+    margin: 40px auto !important;
+  }
+}
+#heiim > .visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+/* Override earlier mobile image rules that unset the slideshow's fixed frame. */
+@media (max-width: 700px) {
+  #noii .widepic.noii-photo-slideshow { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; }
+  #noii .widepic.noii-photo-slideshow .noii-slide {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: auto !important;
+    object-fit: cover !important;
+  }
+}
