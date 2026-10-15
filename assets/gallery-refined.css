@@ -70,3 +70,13 @@
 .gallery-collection-intro span{font-size:10px;letter-spacing:.18em;color:#77766e}
 .gallery-collection-intro p{font-size:12px;line-height:2.3;color:#68675f;margin:0}
 @media(max-width:700px){.gallery-hero{height:clamp(230px,56vw,400px)}.gallery-hero-caption{left:7%;bottom:22px}.gallery-hero-caption span{font-size:8px}.gallery-hero-caption h1{font-size:25px;margin-top:9px}.gallery-collection-intro{margin:0 7%;padding:48px 0 55px;display:block}.gallery-collection-intro p{margin-top:20px;font-size:11px}}
+/* Header: shorter and translucent navigation band */
+.gallery-header{background:rgba(242,241,237,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding-top:17px;padding-bottom:17px}
+@media(max-width:700px){
+.gallery-header{padding:13px 6%;background:rgba(242,241,237,.70);border-bottom:1px solid rgba(140,140,130,.20)}
+.gallery-grid{padding-top:34px;padding-bottom:95px;row-gap:57px}
+.gallery-item:nth-child(4n + 2){margin-top:64px}
+.gallery-item:nth-child(4n + 3){margin-top:26px}
+.gallery-item:nth-child(4n + 4){margin-top:82px}
+.gallery-end{margin-top:0}
+}
