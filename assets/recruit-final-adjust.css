@@ -4,7 +4,7 @@
   .recruit-photo img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; }
 }
 /* Explicitly target the salary figures; loaded last to avoid old rules and cache. */
-.recruit-positions .job-panel .job-salary > strong { font-size:38px; }
+.recruit-positions .job-panel .job-salary > strong { font-size:22px; }
 @media (max-width:700px) {
-  .recruit-positions .job-panel .job-salary > strong { font-size:30px; }
+  .recruit-positions .job-panel .job-salary > strong { font-size:22px; }
 }
