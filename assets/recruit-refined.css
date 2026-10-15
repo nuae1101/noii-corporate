@@ -5,3 +5,7 @@
 /* Restrained salary typography */
 .job-salary strong{font-size:clamp(32px,3.6vw,46px);letter-spacing:-.045em}
 @media(max-width:700px){.job-salary strong{font-size:clamp(32px,8.5vw,39px)}}
+
+/* Salary figures aligned with restrained heading scale */
+.job-salary strong{font-size:clamp(28px,3vw,38px);letter-spacing:-.04em}
+@media(max-width:700px){.job-salary strong{font-size:30px}}
