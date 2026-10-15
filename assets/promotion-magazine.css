@@ -1,0 +1,76 @@
+
+/* Magazine-inspired PROMOTION page: no changes to other pages */
+.gallery-page{background:#faf9f6;color:#22221f}
+.gallery-page main{overflow:hidden}
+.gallery-page .mag-cover,.gallery-page .mag-opening,.gallery-page .mag-spread,.gallery-page .mag-quiet,.gallery-page .mag-photo-essay,.gallery-page .mag-closing{box-sizing:border-box}
+.gallery-page .mag-meta,.gallery-page .mag-folio,.gallery-page .mag-cover-sub,.gallery-page .mag-quiet-caption{font-size:10px;letter-spacing:.14em;font-weight:400}
+.gallery-page .mag-cover{position:relative;padding:100px 7% 90px;min-height:800px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr auto;gap:28px 5%;align-items:center}
+.gallery-page .mag-meta{grid-column:1/-1;white-space:pre-wrap;border-bottom:1px solid #bcbcb6;padding-bottom:18px;color:#686862}
+.gallery-page .mag-cover-image{grid-column:2;grid-row:2;max-width:560px;width:100%;justify-self:end}
+.gallery-page .mag-cover-image img{width:100%;height:clamp(450px,55vw,740px);object-fit:cover;object-position:center 27%}
+.gallery-page .mag-cover-title{grid-column:1;grid-row:2;font-family:Georgia,'Times New Roman',serif;font-size:clamp(45px,8vw,130px);letter-spacing:-.075em;line-height:.9;z-index:1;white-space:nowrap;margin-right:-35%;align-self:center}
+.gallery-page .mag-cover-sub{grid-column:1/-1;text-align:right;color:#686862}
+.gallery-page .mag-opening{padding:145px 12% 165px;min-height:560px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;border-top:1px solid #deddd8}
+.gallery-page .mag-opening-title{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(58px,9vw,145px);letter-spacing:-.075em;line-height:1.02;max-width:1000px;margin:45px 0}
+.gallery-page .mag-opening-copy{font-size:12px;line-height:2.5;letter-spacing:.08em;max-width:460px}
+.gallery-page .mag-spread{display:grid;grid-template-columns:1fr 1fr;gap:5%;padding:95px 7%;min-height:740px;align-items:center}
+.gallery-page .mag-spread-type{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:25px 5%}
+.gallery-page .mag-huge,.gallery-page .mag-display,.gallery-page .mag-overlap,.gallery-page .mag-essay-title,.gallery-page .mag-closing-title{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.07em;line-height:1.02}
+.gallery-page .mag-huge{font-size:clamp(55px,7vw,112px);margin:55px 0 45px}
+.gallery-page .mag-display{font-size:clamp(55px,7.5vw,120px);margin:55px 0 45px}
+.gallery-page .mag-copy{font-size:12px;line-height:2.3;letter-spacing:.05em;max-width:350px}
+.gallery-page .mag-spread .mag-photo img{width:100%;height:clamp(500px,60vw,830px);object-fit:cover;object-position:center 25%}
+.gallery-page .mag-spread-one{background:#ecebe7}
+.gallery-page .mag-spread-two{background:#faf9f6}
+.gallery-page .mag-spread-three{background:#e6e6e2}
+.gallery-page .mag-overlap{white-space:pre-line;font-size:clamp(75px,10vw,160px);margin:55px 0 45px;letter-spacing:-.09em}
+.gallery-page .mag-quiet{padding:120px 12% 145px;min-height:850px;display:flex;flex-direction:column;align-items:flex-start;gap:35px}
+.gallery-page .mag-quiet-image{width:49%;margin:40px auto 0 11%}
+.gallery-page .mag-quiet-image img{width:100%;height:auto;max-height:620px;object-fit:contain}
+.gallery-page .mag-quiet-caption{margin:0 0 0 11%;color:#666}
+.gallery-page .mag-photo-essay{padding:125px 7% 170px}
+.gallery-page .mag-essay-title{font-size:clamp(60px,10vw,140px);margin:35px 0 100px}
+.gallery-page .mag-essay-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:70px 2%;align-items:start}
+.gallery-page .mag-essay-grid .mag-photo{grid-column:span 5;min-width:0}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(4n+1){grid-column:1/span 7}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(4n+2){grid-column:9/span 4;margin-top:100px}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(4n+3){grid-column:2/span 4;margin-top:45px}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(4n+4){grid-column:7/span 6;margin-top:125px}
+.gallery-page .mag-essay-grid .mag-photo img{display:block;width:100%;height:auto;object-fit:contain}
+.gallery-page .mag-photo figcaption{font-size:9px;letter-spacing:.13em;color:#7b7b74;padding-top:12px}
+.gallery-page .mag-closing{border-top:1px solid #ccc;padding:130px 8% 155px;text-align:center;display:flex;align-items:center;flex-direction:column}
+.gallery-page .mag-closing-title{font-size:clamp(65px,11vw,150px);margin:55px 0 70px}
+.gallery-page .mag-closing-link{font-size:11px;letter-spacing:.16em;border-bottom:1px solid;padding-bottom:12px;text-decoration:none;color:inherit}
+.gallery-page .gallery-item{margin:0!important;padding:0!important;display:block;position:relative}
+.gallery-page .gallery-item a{display:block;cursor:zoom-in}
+@media(max-width:700px){
+.gallery-page .mag-cover{padding:90px 7% 55px;min-height:auto;grid-template-columns:1fr;grid-template-rows:auto auto auto auto;gap:18px}
+.gallery-page .mag-meta{font-size:8px}
+.gallery-page .mag-cover-image{grid-column:1;grid-row:2;width:75%;justify-self:end}
+.gallery-page .mag-cover-image img{height:100vw;max-height:560px;object-fit:cover}
+.gallery-page .mag-cover-title{grid-column:1;grid-row:2;font-size:clamp(43px,11vw,80px);margin:0;align-self:center;transform:translateY(28px);letter-spacing:-.08em}
+.gallery-page .mag-cover-sub{grid-column:1;grid-row:3;font-size:8px;line-height:1.8}
+.gallery-page .mag-opening{min-height:440px;padding:90px 8% 110px}
+.gallery-page .mag-opening-title{font-size:clamp(54px,12vw,82px);margin:32px 0}
+.gallery-page .mag-opening-copy{font-size:11px}
+.gallery-page .mag-spread{grid-template-columns:1fr;min-height:auto;padding:65px 8% 90px;gap:40px}
+.gallery-page .mag-spread-type{padding:0;grid-row:1}
+.gallery-page .mag-spread .mag-photo{grid-row:2;width:83%;justify-self:end}
+.gallery-page .mag-spread-two .mag-photo{justify-self:start}
+.gallery-page .mag-spread .mag-photo img{height:110vw;max-height:650px}
+.gallery-page .mag-huge,.gallery-page .mag-display{font-size:clamp(64px,13vw,92px);margin:30px 0}
+.gallery-page .mag-overlap{font-size:clamp(80px,18vw,125px);margin:30px 0}
+.gallery-page .mag-copy{font-size:11px}
+.gallery-page .mag-quiet{min-height:auto;padding:85px 8% 105px;gap:25px}
+.gallery-page .mag-quiet-image{width:77%;margin:25px auto 0 0}
+.gallery-page .mag-quiet-caption{margin:0;font-size:8px}
+.gallery-page .mag-photo-essay{padding:85px 7% 110px}
+.gallery-page .mag-essay-title{font-size:clamp(64px,14vw,100px);margin:25px 0 65px}
+.gallery-page .mag-essay-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 12px}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(n){grid-column:auto;margin:0}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(4n+2){margin-top:55px}
+.gallery-page .mag-essay-grid .mag-photo:nth-child(4n+4){margin-top:35px}
+.gallery-page .mag-photo figcaption{font-size:8px;padding-top:8px}
+.gallery-page .mag-closing{padding:95px 8% 110px}
+.gallery-page .mag-closing-title{font-size:clamp(65px,13vw,100px);margin:40px 0 55px}
+}
