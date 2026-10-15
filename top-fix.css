@@ -1,0 +1,19 @@
+
+/* TOP salon identity: override generic .story-block img rules (which forced 100% width/height). */
+.story-block h2 .top-salon-ai{display:inline-flex;align-items:center;justify-content:flex-start;gap:clamp(14px,2vw,25px);max-width:100%;vertical-align:middle;overflow:visible}
+.story-block h2 .top-salon-ai img{display:block;position:static;flex:0 0 auto;height:auto!important;max-width:none;object-fit:contain;transform:none!important;transition:none!important}
+.story-block h2 .top-salon-ai .top-salon-ai-lockup{width:clamp(34px,4.2vw,55px)!important}
+.story-block h2 .top-salon-ai .top-salon-ai-word{width:clamp(78px,9vw,118px)!important}
+.story-block h2 .top-heiim-ai .top-salon-ai-lockup{width:clamp(39px,4.8vw,62px)!important}
+.story-block h2 .top-heiim-ai .top-salon-ai-word{width:clamp(88px,10vw,130px)!important}
+@media(max-width:700px){
+ .story-block h2 .top-salon-ai{gap:15px}
+ .story-block h2 .top-salon-ai .top-salon-ai-lockup{width:39px!important}
+ .story-block h2 .top-salon-ai .top-salon-ai-word{width:86px!important}
+ .story-block h2 .top-heiim-ai .top-salon-ai-lockup{width:44px!important}
+ .story-block h2 .top-heiim-ai .top-salon-ai-word{width:96px!important}
+ /* Shorter cinematic hero: less vertical crop of the 16:9 source on phones. */
+ .ed-hero{height:68svh;min-height:380px;max-height:640px}
+ .ed-hero video{object-fit:cover;object-position:55% 50%}
+ .ed-hero-center{bottom:16%}
+}
