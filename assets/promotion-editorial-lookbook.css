@@ -1,0 +1,47 @@
+
+/* PROMOTION — fashion-editorial lookbook. Scoped to gallery page. */
+.gallery-page{background:#f1f0eb;color:#242420}
+.gallery-page .gallery-hero{height:clamp(390px,60vw,770px)}
+.gallery-page .gallery-hero>img{object-position:center 44%}
+.gallery-page .gallery-hero:after{inset:30% 0 0;background:linear-gradient(transparent 45%,rgba(0,0,0,.38))}
+.gallery-page .gallery-hero-caption{left:7.5%;bottom:7.5%}
+.gallery-page .gallery-hero-caption span{font-size:9px;letter-spacing:.24em}
+.gallery-page .gallery-hero-caption h1{font-size:clamp(34px,6vw,90px);letter-spacing:-.035em;font-weight:400;line-height:1.05}
+.gallery-page .gallery-collection-intro{margin:0 7.5%;padding:105px 0 130px;display:block;position:relative}
+.gallery-page .gallery-collection-intro:after{content:"";display:block;height:1px;background:#c7c6be;margin-top:90px}
+.gallery-page .gallery-collection-intro>span{display:block;font-size:10px;letter-spacing:.24em;color:#77776f}
+.gallery-page .gallery-collection-intro>p{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(34px,6.4vw,92px);line-height:1.08;letter-spacing:-.065em;color:#292923;margin:35px 0 30px;max-width:1050px}
+.gallery-page .gallery-collection-intro>small{display:block;font-size:12px;letter-spacing:.09em;color:#77776f}
+.gallery-page .gallery-grid{padding:0 7.5% 100px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:90px 2%;align-items:start}
+.gallery-page .gallery-grid>.gallery-item{grid-column:auto;margin:0;padding:0!important;min-width:0}
+.gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 1){grid-column:1/span 7}
+.gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 2){grid-column:9/span 4;margin-top:28%}
+.gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 3){grid-column:2/span 4;margin-top:4%}
+.gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 4){grid-column:7/span 6;margin-top:18%}
+.gallery-page .gallery-item img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+.gallery-page .gallery-item figcaption{font-size:9px;letter-spacing:.16em;padding-top:12px;color:#88877e}
+.gallery-page .lookbook-interlude{grid-column:1/-1;padding:85px 0 90px;min-height:350px;border-top:1px solid #c7c6be;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.gallery-page .lookbook-index{font-size:10px;letter-spacing:.22em;color:#77776f}
+.gallery-page .lookbook-interlude h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(78px,14vw,215px);line-height:.9;letter-spacing:-.075em;margin:34px 0 30px}
+.gallery-page .lookbook-interlude p{font-size:12px;letter-spacing:.08em;color:#77776f;margin:0}
+.gallery-page .gallery-end{margin-top:0}
+@media(max-width:700px){
+ .gallery-page .gallery-hero{height:clamp(270px,85vw,520px)}
+ .gallery-page .gallery-hero-caption{left:7%;bottom:8%}
+ .gallery-page .gallery-hero-caption h1{font-size:clamp(32px,8vw,48px)}
+ .gallery-page .gallery-collection-intro{margin:0 7%;padding:75px 0 80px}
+ .gallery-page .gallery-collection-intro>p{font-size:clamp(40px,10vw,62px);margin:30px 0 20px;max-width:380px}
+ .gallery-page .gallery-collection-intro>small{font-size:10px}
+ .gallery-page .gallery-collection-intro:after{margin-top:65px}
+ .gallery-page .gallery-grid{padding:0 7% 85px;grid-template-columns:repeat(2,minmax(0,1fr));gap:42px 13px}
+ .gallery-page .gallery-grid>.gallery-item:nth-of-type(n){grid-column:auto;margin:0;padding:0!important}
+ .gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 2){margin-top:50px}
+ .gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 3){margin-top:15px}
+ .gallery-page .gallery-grid>.gallery-item:nth-of-type(4n + 4){margin-top:62px}
+ .gallery-page .gallery-item figcaption{font-size:8px;padding-top:8px}
+ .gallery-page .lookbook-interlude{grid-column:1/-1;min-height:230px;padding:65px 0 55px}
+ .gallery-page .lookbook-index{font-size:9px}
+ .gallery-page .lookbook-interlude h2{font-size:clamp(62px,17vw,110px);margin:25px 0 22px}
+ .gallery-page .lookbook-interlude p{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){.gallery-page .gallery-item img{transition:none}}
