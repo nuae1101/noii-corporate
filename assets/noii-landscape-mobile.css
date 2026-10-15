@@ -1,0 +1,4 @@
+/* Preserve the original landscape framing of the noii lead image on mobile. */
+#noii .noii-landscape-photo{width:100%;overflow:hidden}
+#noii .noii-landscape-photo img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center}
+@media(max-width:700px){#noii .noii-landscape-photo img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}}

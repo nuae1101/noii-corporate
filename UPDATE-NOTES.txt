@@ -1,0 +1,1 @@
+Unified navigation, logo scale, translucent band and menu typography on all five pages. Existing photos, salon tabs, recruit terms and promotion lightbox preserved. Please verify on actual Safari devices.
