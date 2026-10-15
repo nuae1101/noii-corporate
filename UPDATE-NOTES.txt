@@ -1,1 +1,1 @@
-Unified navigation, logo scale, translucent band and menu typography on all five pages. Existing photos, salon tabs, recruit terms and promotion lightbox preserved. Please verify on actual Safari devices.
+Mobile photo finish: no blanket cropping. Product, gallery, and noii wide salon image preserve original aspect ratio. Existing intentional TOP salon compositions retained. Optimized referenced JPEG assets without resizing; no text, booking URLs or staff details changed. Test on iPhone Safari after uploading.
