@@ -1,8 +1,0 @@
-/* TOP salon story: preserve restrained asymmetry, avoid tall mobile crops */
-@media (max-width:700px){
- .salon-story .story-noii figure{height:auto!important;aspect-ratio:3/2!important;max-height:none!important}
- .salon-story .story-heiim figure{height:auto!important;aspect-ratio:4/3!important;max-height:none!important}
- .salon-story .story-block figure img{display:block;width:100%;height:100%;aspect-ratio:inherit;object-fit:cover;object-position:center}
- .salon-story .story-noii{width:84%}
- .salon-story .story-heiim{width:78%;margin-top:78px}
-}
