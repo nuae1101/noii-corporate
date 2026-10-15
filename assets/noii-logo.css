@@ -31,3 +31,9 @@
 .top-heiim-ai .top-salon-ai-lockup{width:44px}
 .top-heiim-ai .top-salon-ai-word{width:96px}
 }
+
+/* NUAE official product photography, with the original compositions preserved. */
+.nuae-product-image{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+.nuae-home-visual{overflow:hidden}
+.nuae-home-visual img{width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:700px){.nuae-home-visual img{object-position:center}}
