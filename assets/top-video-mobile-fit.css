@@ -1,0 +1,12 @@
+/* TOP hero video: preserve full horizontal composition on phones. */
+@media (max-width:700px){
+  .ed-hero .ed-video-bg{
+    background-size:cover;
+    filter:blur(22px) brightness(.65);
+    transform:scale(1.12);
+  }
+  .ed-hero video{
+    object-fit:contain;
+    object-position:center center;
+  }
+}
