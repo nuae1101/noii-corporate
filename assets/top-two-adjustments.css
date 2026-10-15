@@ -1,0 +1,8 @@
+/* Requested TOP-only refinements, 2026-10-15 */
+/* Move the bottles upward within the existing square crop; keep image dimensions unchanged. */
+.product-story .nuae-home-visual img { object-position: center 85%; }
+/* Mobile: reduce the empty space between philosophy copy and the salon photograph. */
+@media (max-width:700px) {
+  body.editorial .ed-intro { padding-bottom: 55px; }
+  body.editorial .ed-grow { margin-top: -105px; }
+}
