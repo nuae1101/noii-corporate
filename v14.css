@@ -1,0 +1,9 @@
+/* v14: modern understated typography */
+body.editorial{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+.ed-hero h1,.ed-hero h1 em,.story-intro em,.promo-caption em,.recruit-story em,.product-word{font-family:inherit!important;font-style:normal!important;font-weight:300!important;letter-spacing:-.045em!important}
+.ed-hero h1{font-size:clamp(37px,5.2vw,76px)!important;line-height:1.24!important}
+.story-intro>p,.promo-caption h2,.recruit-story p{font-weight:300!important}
+.ed-hero video{object-fit:cover;object-position:center center}
+.ed-hero-shade{background:linear-gradient(180deg,rgba(0,0,0,.22),transparent 36%,rgba(0,0,0,.34))}
+@media(max-width:700px){.ed-hero h1{font-size:clamp(30px,7.7vw,45px)!important}.ed-hero-center{bottom:18%}.ed-hero video{object-position:53% center}}
+@media(prefers-reduced-motion:reduce){.ed-hero video{display:none}}
