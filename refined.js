@@ -1,1 +1,0 @@
-(()=>{const cards=document.querySelectorAll('.feature-card');if(!('IntersectionObserver'in window)){cards.forEach(x=>x.classList.add('is-visible'));return}const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target)}})},{threshold:.13});cards.forEach(x=>observer.observe(x))})();

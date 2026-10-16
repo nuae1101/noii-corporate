@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://noii-official.com/sitemap.xml

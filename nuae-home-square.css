@@ -1,3 +1,0 @@
-/* TOP NUAE visual: keep original width, crop to square without stretching. */
-.product-story .nuae-home-visual{aspect-ratio:1/1;min-height:0;overflow:hidden;}
-.product-story .nuae-home-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;}

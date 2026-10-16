@@ -1,7 +1,0 @@
-(()=>{const overlay=document.querySelector('.gallery-lightbox');if(!overlay)return;const image=overlay.querySelector('img'),counter=overlay.querySelector('.gallery-lightbox-count'),links=[...document.querySelectorAll('.gallery-item a')];let current=0;function show(i){current=(i+links.length)%links.length;image.src=links[current].getAttribute('href');image.alt=links[current].querySelector('img')?.alt||'作品写真';counter.textContent=`${String(current+1).padStart(2,'0')} / ${String(links.length).padStart(2,'0')}`;overlay.classList.add('is-open');document.body.style.overflow='hidden'}function close(){overlay.classList.remove('is-open');document.body.style.overflow='';image.removeAttribute('src')}links.forEach((a,i)=>a.addEventListener('click',e=>{e.preventDefault();show(i)}));overlay.querySelector('button').addEventListener('click',close);overlay.addEventListener('click',e=>{if(e.target===overlay)close()});document.addEventListener('keydown',e=>{if(!overlay.classList.contains('is-open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')show(current+1);if(e.key==='ArrowLeft')show(current-1)})})();
-
-;(()=>{const overlay=document.querySelector('.gallery-lightbox');if(!overlay)return;
-let x=null;overlay.addEventListener('touchstart',e=>{x=e.touches[0]?.clientX??null},{passive:true});
-overlay.addEventListener('touchend',e=>{if(x===null)return;const d=(e.changedTouches[0]?.clientX??x)-x;x=null;
-if(Math.abs(d)>65){const ev=new KeyboardEvent('keydown',{key:d<0?'ArrowRight':'ArrowLeft',bubbles:true});document.dispatchEvent(ev)}},{passive:true});
-})();
