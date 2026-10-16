@@ -1,14 +1,6 @@
-/* Additional staff four-view portraits; existing layout preserved */
 .staff-entry:has(.staff-fourview){display:block}
-.staff-fourview{position:relative;width:100%;max-width:390px;aspect-ratio:3/4;overflow:hidden;margin:0 0 18px;background:#e6e3df}
-.staff-fourview-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .42s ease;display:block}
-.staff-fourview-image.is-visible{opacity:1}
-@media(max-width:700px){.staff-fourview{max-width:100%;}}
-@media(prefers-reduced-motion:reduce){.staff-fourview-image{transition:none}}
-/* Mobile: two large, equal-width staff portraits. Keep original images uncropped. */
-@media(max-width:700px){
-  .salon-tab-panel .staff-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:16px;max-width:none}
-  .salon-tab-panel .staff-entry{min-width:0;padding:12px 0 18px}
-  .salon-tab-panel .staff-fourview{width:100%;max-width:none;margin-bottom:12px;aspect-ratio:3/4}
-  .salon-tab-panel .staff-entry-name h4{overflow-wrap:anywhere}
-}
+.salon-tab-panel .staff-fourview{position:relative;width:100%;max-width:290px;aspect-ratio:3/4;overflow:hidden;margin:0 0 14px;background:#e6e3df;isolation:isolate}
+.staff-fourview-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;display:block;transition:none}
+.staff-fourview-image:first-child{opacity:1}
+@media(min-width:701px){.salon-tab-panel .staff-list{grid-template-columns:repeat(2,minmax(0,290px));gap:34px 24px}}
+@media(max-width:700px){.salon-tab-panel .staff-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:16px;max-width:none}.salon-tab-panel .staff-entry{min-width:0;padding:12px 0 18px}.salon-tab-panel .staff-fourview{width:100%;max-width:none;margin-bottom:12px;aspect-ratio:3/4}.salon-tab-panel .staff-entry-name h4{overflow-wrap:anywhere}}
