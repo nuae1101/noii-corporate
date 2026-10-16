@@ -1,0 +1,1 @@
+(()=>{const frames=[...document.querySelectorAll('.staff-fourview')];if(!frames.length)return;const state=frames.map(f=>({images:[...f.querySelectorAll('img')],index:0}));setInterval(()=>{for(const s of state){s.images[s.index].classList.remove('is-visible');s.index=(s.index+1)%s.images.length;s.images[s.index].classList.add('is-visible')}},1000)})();
