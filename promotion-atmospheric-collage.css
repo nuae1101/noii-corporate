@@ -1,0 +1,78 @@
+
+/* noii atmospheric collage / isolated page redesign */
+body.gallery-page{background:#eae8e3!important;color:#262521!important}
+.gallery-page .noii-collage{overflow:hidden;background:#eae8e3;font-family:Arial,Helvetica,sans-serif}
+.gallery-page .collage-intro{position:relative;min-height:300px;padding:112px 6% 45px}
+.gallery-page .collage-eyebrow,.gallery-page .collage-board-type span,.gallery-page .collage-stamp,.gallery-page .collage-ending>span{font-size:9px;letter-spacing:.23em;font-weight:400}
+.gallery-page .collage-intro h1{font-family:Georgia,serif;font-size:clamp(90px,14vw,235px);font-weight:400;letter-spacing:-.085em;line-height:.95;margin:35px 0 0}
+.gallery-page .collage-dot{color:#999389}
+.gallery-page .collage-intro p{font-family:Georgia,serif;font-size:clamp(19px,2.5vw,35px);font-style:italic;line-height:1.15;position:absolute;right:8%;bottom:30px}
+.gallery-page .collage-board{position:relative;height:min(88vw,980px);min-height:690px;margin:0 auto 5vw;max-width:1800px;isolation:isolate}
+.gallery-page .collage-photo{position:absolute!important;margin:0!important;padding:0!important;overflow:hidden;box-shadow:none;transform:none!important}
+.gallery-page .collage-photo a{display:block;width:100%;height:100%;cursor:zoom-in}
+.gallery-page .collage-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.70) contrast(.92) sepia(.08);transition:filter .5s ease,transform .7s ease}
+.gallery-page .collage-photo:hover img{filter:saturate(.9) contrast(.96);transform:scale(1.025)}
+.gallery-page .collage-board-type{position:absolute;z-index:9;left:6%;top:14%;pointer-events:none;mix-blend-mode:multiply}
+.gallery-page .collage-board-type h2{font-family:Georgia,serif;font-weight:400;font-style:italic;font-size:clamp(35px,5.3vw,87px);line-height:1.06;letter-spacing:-.055em;max-width:570px;margin:25px 0;white-space:pre-line}
+.gallery-page .collage-stamp{position:absolute;right:6%;bottom:4%;z-index:10}
+.gallery-page .collage-p1{left:21%;top:0;width:38%;height:74%;z-index:2}
+.gallery-page .collage-p2{left:54%;top:10%;width:22%;height:34%;z-index:4}
+.gallery-page .collage-p3{left:2%;top:48%;width:28%;height:42%;z-index:5}
+.gallery-page .collage-p4{left:48%;top:54%;width:33%;height:38%;z-index:6}
+.gallery-page .collage-p5{left:77%;top:38%;width:19%;height:37%;z-index:3}
+.gallery-page .collage-board-2{background:#e4e1db}
+.gallery-page .collage-board-2 .collage-p1{left:3%;top:9%;width:34%;height:68%}
+.gallery-page .collage-board-2 .collage-p2{left:30%;top:34%;width:29%;height:51%}
+.gallery-page .collage-board-2 .collage-p3{left:64%;top:0;width:27%;height:47%}
+.gallery-page .collage-board-2 .collage-p4{left:67%;top:55%;width:27%;height:37%}
+.gallery-page .collage-board-2 .collage-p5{left:43%;top:3%;width:18%;height:29%}
+.gallery-page .collage-board-2 .collage-board-type{left:42%;top:55%;z-index:8;color:#eeeae3;mix-blend-mode:normal;text-shadow:0 1px 8px #2228}
+.gallery-page .collage-board-3 .collage-p1{left:18%;top:0;width:55%;height:76%}
+.gallery-page .collage-board-3 .collage-p2{left:0;top:48%;width:23%;height:44%}
+.gallery-page .collage-board-3 .collage-p3{left:69%;top:18%;width:25%;height:48%}
+.gallery-page .collage-board-3 .collage-p4{left:46%;top:62%;width:31%;height:33%}
+.gallery-page .collage-board-3 .collage-p5{left:4%;top:8%;width:16%;height:29%}
+.gallery-page .collage-board-3 .collage-board-type{top:28%;left:7%}
+.gallery-page .collage-board-4{background:#dedbd5}
+.gallery-page .collage-board-4 .collage-p1{left:5%;top:4%;width:43%;height:72%}
+.gallery-page .collage-board-4 .collage-p2{left:51%;top:5%;width:22%;height:39%}
+.gallery-page .collage-board-4 .collage-p3{left:69%;top:39%;width:27%;height:51%}
+.gallery-page .collage-board-4 .collage-p4{left:34%;top:55%;width:29%;height:40%}
+.gallery-page .collage-board-4 .collage-board-type{left:52%;top:50%;color:#f3f0eb;mix-blend-mode:normal}
+.gallery-page .collage-ending{padding:120px 8% 150px;text-align:center}
+.gallery-page .collage-ending p{font:normal clamp(65px,10vw,150px)/.94 Georgia,serif;letter-spacing:-.07em;margin:45px 0 70px}
+.gallery-page .collage-ending em{font-weight:400}
+.gallery-page .collage-ending a{font-size:11px;letter-spacing:.17em;color:inherit;text-decoration:none;border-bottom:1px solid;padding-bottom:7px}
+@media(max-width:700px){
+.gallery-page .collage-intro{padding:80px 6% 45px;min-height:245px}
+.gallery-page .collage-intro h1{font-size:clamp(70px,17vw,110px);margin-top:45px}
+.gallery-page .collage-intro p{font-size:16px;right:7%;bottom:15px}
+.gallery-page .collage-board{height:145vw;min-height:0;margin-bottom:7vw}
+.gallery-page .collage-board-type{left:5%;top:12%}
+.gallery-page .collage-board-type h2{font-size:clamp(30px,8vw,52px);max-width:58vw;margin:12px 0}
+.gallery-page .collage-board-type span,.gallery-page .collage-stamp{font-size:7px}
+.gallery-page .collage-p1{left:23%;top:0;width:51%;height:59%}
+.gallery-page .collage-p2{left:64%;top:14%;width:31%;height:30%}
+.gallery-page .collage-p3{left:0;top:49%;width:41%;height:40%}
+.gallery-page .collage-p4{left:38%;top:61%;width:42%;height:32%}
+.gallery-page .collage-p5{left:75%;top:43%;width:24%;height:31%}
+.gallery-page .collage-board-2 .collage-p1{left:0;top:9%;width:51%;height:61%}
+.gallery-page .collage-board-2 .collage-p2{left:32%;top:40%;width:37%;height:44%}
+.gallery-page .collage-board-2 .collage-p3{left:62%;top:2%;width:36%;height:40%}
+.gallery-page .collage-board-2 .collage-p4{left:70%;top:59%;width:28%;height:32%}
+.gallery-page .collage-board-2 .collage-p5{left:45%;top:8%;width:26%;height:24%}
+.gallery-page .collage-board-2 .collage-board-type{left:38%;top:55%}
+.gallery-page .collage-board-3 .collage-p1{left:15%;top:0;width:65%;height:65%}
+.gallery-page .collage-board-3 .collage-p2{left:0;top:54%;width:34%;height:38%}
+.gallery-page .collage-board-3 .collage-p3{left:70%;top:19%;width:29%;height:42%}
+.gallery-page .collage-board-3 .collage-p4{left:37%;top:69%;width:45%;height:26%}
+.gallery-page .collage-board-3 .collage-p5{left:0;top:8%;width:23%;height:27%}
+.gallery-page .collage-board-3 .collage-board-type{left:6%;top:29%}
+.gallery-page .collage-board-4 .collage-p1{left:2%;top:5%;width:56%;height:64%}
+.gallery-page .collage-board-4 .collage-p2{left:57%;top:8%;width:34%;height:32%}
+.gallery-page .collage-board-4 .collage-p3{left:70%;top:43%;width:29%;height:43%}
+.gallery-page .collage-board-4 .collage-p4{left:27%;top:62%;width:47%;height:32%}
+.gallery-page .collage-board-4 .collage-board-type{left:43%;top:48%}
+.gallery-page .collage-ending{padding:90px 5% 115px}
+.gallery-page .collage-ending p{font-size:clamp(60px,14vw,90px)}
+}

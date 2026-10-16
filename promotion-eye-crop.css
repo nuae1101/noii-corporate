@@ -1,0 +1,6 @@
+/* TOP promotion second photo: preserve the reference's approx. 4:3 frame,
+   with the upper edge cutting through the eyes (not at the mouth). */
+@media(max-width:700px){
+ .promotion-story .promo-two{aspect-ratio:4/3!important;height:auto!important}
+ .promotion-story .promo-two img{display:block;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 46%!important;transform:none!important}
+}

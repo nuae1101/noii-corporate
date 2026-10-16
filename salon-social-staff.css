@@ -1,0 +1,10 @@
+
+.salon-social-links{display:flex;gap:0;flex-wrap:wrap;margin:28px 0 75px;border-top:1px solid #c9c6bf;border-bottom:1px solid #c9c6bf;max-width:600px}
+.salon-action{display:flex;align-items:center;justify-content:space-between;gap:36px;padding:22px 24px 22px 0;min-width:240px;font-size:11px;letter-spacing:.15em;text-decoration:none;color:inherit;transition:opacity .2s ease}
+.salon-action:hover{opacity:.55}.salon-action span{font-size:16px;font-weight:300}
+.staff-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(22px,5vw,90px);margin:24px 0 100px;max-width:880px}
+.staff-entry{border-top:1px solid #c9c6bf;padding:25px 0 30px;min-height:88px}
+.staff-entry-name{display:flex;align-items:baseline;flex-wrap:wrap;gap:15px}
+.staff-entry h4{margin:0;font-size:clamp(15px,1.4vw,19px);font-weight:400;letter-spacing:.08em}
+.staff-role{font-size:10px;letter-spacing:.12em;color:#77746f}
+@media(max-width:650px){.salon-social-links{margin:23px 0 60px}.salon-action{min-width:0;width:50%;padding:20px 15px 20px 0;font-size:10px;letter-spacing:.1em;gap:8px}.staff-list{grid-template-columns:1fr;margin:20px 0 75px}.staff-entry{padding:20px 0 23px;min-height:0}.staff-entry h4{font-size:16px}}

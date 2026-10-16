@@ -1,0 +1,21 @@
+/* Shared navigation translucency across all five pages. */
+:root{--noii-nav-glass:rgba(235,233,227,.30)}
+body:not(.editorial):not(.gallery-page) > header,
+body.editorial .ed-header.scrolled,
+body.gallery-page .noii-unified-header{
+ background:var(--noii-nav-glass)!important;
+ -webkit-backdrop-filter:blur(9px) saturate(105%)!important;
+ backdrop-filter:blur(9px) saturate(105%)!important;
+ border-bottom:1px solid rgba(80,78,72,.08)!important;
+}
+/* Keep the transparent-on-hero home header legible. */
+body.editorial .ed-header:not(.scrolled){background:rgba(235,233,227,.10)!important;-webkit-backdrop-filter:blur(6px)!important;backdrop-filter:blur(6px)!important}
+/* Opened mobile navigation remains readable. */
+@media(max-width:700px){
+ body:not(.editorial):not(.gallery-page) > header .navlinks.open,
+ body.editorial .ed-header .navlinks.open,
+ body.gallery-page .noii-unified-header .navlinks.open{
+ background:rgba(235,233,227,.96)!important;
+ -webkit-backdrop-filter:blur(15px)!important;backdrop-filter:blur(15px)!important;
+ }
+}

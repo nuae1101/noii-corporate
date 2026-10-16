@@ -1,0 +1,19 @@
+
+/* Typography refinement: quiet headings, photographic emphasis */
+.pagehead > h1.heading{font-size:clamp(34px,5vw,68px)!important;letter-spacing:-.045em!important;line-height:1.12}
+.nuae-intro .nuae-brand{font-size:clamp(55px,9vw,122px)!important;letter-spacing:-.065em!important;line-height:1}
+.nuae-intro-bottom h1{font-size:clamp(31px,4.1vw,53px)!important;line-height:1.2}
+.nuae-detail h2{font-size:clamp(29px,3.1vw,44px)!important;line-height:1.18}
+.nuae-fragrance h2,.nuae-store h2{font-size:clamp(32px,4vw,55px)!important}
+.gallery-hero-caption h1{font-size:clamp(22px,3.1vw,42px)!important;letter-spacing:.08em!important}
+.recruit-hero .recruit-hero-bottom .jp{font-size:clamp(21px,3vw,38px)!important}
+.salon-tab-panel > h2.heading{font-size:clamp(24px,3.5vw,48px)!important}
+@media(max-width:700px){
+ .pagehead > h1.heading{font-size:36px!important}
+ .nuae-intro .nuae-brand{font-size:clamp(58px,15vw,78px)!important}
+ .nuae-intro-bottom h1{font-size:32px!important}
+ .nuae-detail h2{font-size:32px!important}
+ .nuae-fragrance h2,.nuae-store h2{font-size:34px!important}
+ .gallery-hero-caption h1{font-size:21px!important}
+ .recruit-hero .recruit-hero-bottom .jp{font-size:24px!important}
+}

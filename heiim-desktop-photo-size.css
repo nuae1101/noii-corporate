@@ -1,0 +1,16 @@
+/* Desktop only: restrain Heiim's main interior photo without cropping. */
+@media (min-width: 701px) {
+  #heiim > .widepic {
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #heiim > .widepic img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+}
