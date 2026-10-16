@@ -5,3 +5,10 @@
 .staff-fourview-image.is-visible{opacity:1}
 @media(max-width:700px){.staff-fourview{max-width:100%;}}
 @media(prefers-reduced-motion:reduce){.staff-fourview-image{transition:none}}
+/* Mobile: two large, equal-width staff portraits. Keep original images uncropped. */
+@media(max-width:700px){
+  .salon-tab-panel .staff-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:16px;max-width:none}
+  .salon-tab-panel .staff-entry{min-width:0;padding:12px 0 18px}
+  .salon-tab-panel .staff-fourview{width:100%;max-width:none;margin-bottom:12px;aspect-ratio:3/4}
+  .salon-tab-panel .staff-entry-name h4{overflow-wrap:anywhere}
+}
