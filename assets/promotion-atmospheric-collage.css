@@ -76,3 +76,6 @@ body.gallery-page{background:#eae8e3!important;color:#262521!important}
 .gallery-page .collage-ending{padding:90px 5% 115px}
 .gallery-page .collage-ending p{font-size:clamp(60px,14vw,90px)}
 }
+
+/* 2026 SS blue-check portrait: show entire original frame */
+.gallery-page .collage-photo-uncropped img{object-fit:contain;object-position:center center;}
