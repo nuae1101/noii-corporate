@@ -8,4 +8,4 @@
 
 /* Reduced NUAE artwork scale on both desktop and mobile. */
 .nuae-intro .nuae-brand-image{width:min(42%,430px);margin-inline:auto;}
-@media(max-width:700px){.nuae-intro .nuae-brand-image{width:72%;margin-inline:auto;}}
+@media(max-width:700px){.nuae-intro .nuae-brand-image{width:58%;margin-inline:auto;}}
